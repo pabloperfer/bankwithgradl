@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="15" passed="15" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-04-13T22:23:57 CEST" name="Gradle suite" finished-at="2022-04-13T22:24:04 CEST" duration-ms="6386">
+    <groups>
+    </groups>
+    <test started-at="2022-04-13T22:23:57 CEST" name="Gradle test" finished-at="2022-04-13T22:24:04 CEST" duration-ms="6386">
+      <class name="BasicUITest">
+        <test-method signature="testEnterFundsAmount()[pri:0, instance:BasicUITest@6d3a388c]" started-at="2022-04-13T22:23:57 CEST" name="testEnterFundsAmount" finished-at="2022-04-13T22:23:57 CEST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEnterFundsAmount -->
+      </class> <!-- BasicUITest -->
+      <class name="UserPortfolioGetExchangeSummaryTest">
+        <test-method signature="getExchangeSummary_WithInvalidRegion_ReturnsExchangeNameList()[pri:0, instance:UserPortfolioGetExchangeSummaryTest@15aab8c6]" started-at="2022-04-13T22:24:00 CEST" name="getExchangeSummary_WithInvalidRegion_ReturnsExchangeNameList" finished-at="2022-04-13T22:24:00 CEST" duration-ms="511" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getExchangeSummary_WithInvalidRegion_ReturnsExchangeNameList -->
+        <test-method signature="getExchangeSummary_WithValidRegion_ReturnsExchangeNameList()[pri:0, instance:UserPortfolioGetExchangeSummaryTest@15aab8c6]" started-at="2022-04-13T22:24:00 CEST" name="getExchangeSummary_WithValidRegion_ReturnsExchangeNameList" finished-at="2022-04-13T22:24:01 CEST" duration-ms="560" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getExchangeSummary_WithValidRegion_ReturnsExchangeNameList -->
+      </class> <!-- UserPortfolioGetExchangeSummaryTest -->
+      <class name="TransactionsAddAssetsTest">
+        <test-method signature="TransactionsAddAssetsTest_addandsumcorrectly()[pri:0, instance:TransactionsAddAssetsTest@212b5695]" started-at="2022-04-13T22:23:57 CEST" name="TransactionsAddAssetsTest_addandsumcorrectly" finished-at="2022-04-13T22:23:57 CEST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TransactionsAddAssetsTest_addandsumcorrectly -->
+      </class> <!-- TransactionsAddAssetsTest -->
+      <class name="TransactionsOutOfAssetsTest">
+        <test-method signature="outofassetstest()[pri:0, instance:TransactionsOutOfAssetsTest@446293d]" started-at="2022-04-13T22:23:57 CEST" name="outofassetstest" finished-at="2022-04-13T22:23:57 CEST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- outofassetstest -->
+      </class> <!-- TransactionsOutOfAssetsTest -->
+      <class name="UserPortfolioWithdrawFundsTest">
+        <test-method is-config="true" signature="addSomeFunds()[pri:0, instance:UserPortfolioWithdrawFundsTest@2a54a73f]" started-at="2022-04-13T22:24:04 CEST" name="addSomeFunds" finished-at="2022-04-13T22:24:04 CEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addSomeFunds -->
+        <test-method signature="UserPortfolioWithdrawFundsTest_EnoughFundsTest()[pri:0, instance:UserPortfolioWithdrawFundsTest@2a54a73f]" started-at="2022-04-13T22:24:04 CEST" name="UserPortfolioWithdrawFundsTest_EnoughFundsTest" finished-at="2022-04-13T22:24:04 CEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserPortfolioWithdrawFundsTest_EnoughFundsTest -->
+        <test-method signature="UserPortfolioWithdrawFundsTest_NotEnoughFundsTest()[pri:0, instance:UserPortfolioWithdrawFundsTest@2a54a73f]" started-at="2022-04-13T22:24:04 CEST" name="UserPortfolioWithdrawFundsTest_NotEnoughFundsTest" finished-at="2022-04-13T22:24:04 CEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserPortfolioWithdrawFundsTest_NotEnoughFundsTest -->
+        <test-method is-config="true" signature="removeSomeFunds()[pri:0, instance:UserPortfolioWithdrawFundsTest@2a54a73f]" started-at="2022-04-13T22:24:04 CEST" name="removeSomeFunds" finished-at="2022-04-13T22:24:04 CEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removeSomeFunds -->
+      </class> <!-- UserPortfolioWithdrawFundsTest -->
+      <class name="UserPortfolioGetAssetInformationTest">
+        <test-method signature="getGetAssetInformation_WithInvalidSymbol_ReturnsEmptyList()[pri:0, instance:UserPortfolioGetAssetInformationTest@37654521]" started-at="2022-04-13T22:23:58 CEST" name="getGetAssetInformation_WithInvalidSymbol_ReturnsEmptyList" finished-at="2022-04-13T22:23:59 CEST" duration-ms="1135" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getGetAssetInformation_WithInvalidSymbol_ReturnsEmptyList -->
+        <test-method signature="getGetAssetInformation_WithValidSymbol_ReturnsPopulatedList()[pri:0, instance:UserPortfolioGetAssetInformationTest@37654521]" started-at="2022-04-13T22:23:59 CEST" name="getGetAssetInformation_WithValidSymbol_ReturnsPopulatedList" finished-at="2022-04-13T22:23:59 CEST" duration-ms="304" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getGetAssetInformation_WithValidSymbol_ReturnsPopulatedList -->
+        <test-method signature="getGetAssetInformation_WithValidSymbol_WithListGreaterThanTen_ReturnsPopulatedList()[pri:0, instance:UserPortfolioGetAssetInformationTest@37654521]" started-at="2022-04-13T22:23:59 CEST" name="getGetAssetInformation_WithValidSymbol_WithListGreaterThanTen_ReturnsPopulatedList" finished-at="2022-04-13T22:24:00 CEST" duration-ms="753" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getGetAssetInformation_WithValidSymbol_WithListGreaterThanTen_ReturnsPopulatedList -->
+      </class> <!-- UserPortfolioGetAssetInformationTest -->
+      <class name="UserPortfolioGetTrendingStocksTest">
+        <test-method signature="getTrendingStocks_WithValidRegion_ReturnsPopulatedList()[pri:0, instance:UserPortfolioGetTrendingStocksTest@33990a0c]" started-at="2022-04-13T22:24:01 CEST" name="getTrendingStocks_WithValidRegion_ReturnsPopulatedList" finished-at="2022-04-13T22:24:01 CEST" duration-ms="713" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getTrendingStocks_WithValidRegion_ReturnsPopulatedList -->
+        <test-method signature="getTrendingStocks_WithInvalidRegion_ReturnsEmptyList()[pri:0, instance:UserPortfolioGetTrendingStocksTest@33990a0c]" started-at="2022-04-13T22:24:01 CEST" name="getTrendingStocks_WithInvalidRegion_ReturnsEmptyList" finished-at="2022-04-13T22:24:01 CEST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getTrendingStocks_WithInvalidRegion_ReturnsEmptyList -->
+      </class> <!-- UserPortfolioGetTrendingStocksTest -->
+      <class name="UserPortfolioRetrieveSharesHistoricalTest">
+        <test-method signature="RetrieveSharesHistorical_SharesRetrievedCorrectly()[pri:0, instance:UserPortfolioRetrieveSharesHistoricalTest@4de4b452]" started-at="2022-04-13T22:24:01 CEST" name="RetrieveSharesHistorical_SharesRetrievedCorrectly" finished-at="2022-04-13T22:24:04 CEST" duration-ms="2333" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RetrieveSharesHistorical_SharesRetrievedCorrectly -->
+      </class> <!-- UserPortfolioRetrieveSharesHistoricalTest -->
+      <class name="UserPortfolioAddFundsTest">
+        <test-method signature="testAddFunds_FundsAddedCorrectly()[pri:0, instance:UserPortfolioAddFundsTest@69997e9d]" started-at="2022-04-13T22:23:57 CEST" name="testAddFunds_FundsAddedCorrectly" finished-at="2022-04-13T22:23:58 CEST" duration-ms="12" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddFunds_FundsAddedCorrectly -->
+        <test-method signature="testAddFunds_FundsAddedIncorrectly()[pri:0, instance:UserPortfolioAddFundsTest@69997e9d]" started-at="2022-04-13T22:23:58 CEST" name="testAddFunds_FundsAddedIncorrectly" finished-at="2022-04-13T22:23:58 CEST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddFunds_FundsAddedIncorrectly -->
+      </class> <!-- UserPortfolioAddFundsTest -->
+    </test> <!-- Gradle test -->
+  </suite> <!-- Gradle suite -->
+</testng-results>

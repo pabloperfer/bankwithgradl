@@ -1,0 +1,6 @@
+M D DLS: Dead store to $L2 in BasicUITest.isNumeric(String)  At BasicUITest.java:[line 14]
+M P SS: Unread field: TransactionsOutOfAssetsTest.message; should this field be static?  At TransactionsOutOfAssetsTest.java:[line 9]
+M D ST: Write to static field UserPortfolio.funds from instance method UserPortfolioAddFundsTest.testAddFunds_FundsAddedCorrectly()  At UserPortfolioAddFundsTest.java:[line 12]
+M D ST: Write to static field UserPortfolio.funds from instance method UserPortfolioAddFundsTest.testAddFunds_FundsAddedIncorrectly()  At UserPortfolioAddFundsTest.java:[line 33]
+M D DLS: Dead store to exchangeName in UserPortfolioGetExchangeSummaryTest.getExchangeSummary_WithInvalidRegion_ReturnsExchangeNameList()  At UserPortfolioGetExchangeSummaryTest.java:[line 30]
+M D DLS: Dead store to exchangeName in UserPortfolioGetExchangeSummaryTest.getExchangeSummary_WithValidRegion_ReturnsExchangeNameList()  At UserPortfolioGetExchangeSummaryTest.java:[line 19]

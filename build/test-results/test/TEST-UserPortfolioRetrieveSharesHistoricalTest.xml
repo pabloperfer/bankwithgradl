@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="UserPortfolioRetrieveSharesHistoricalTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-04-13T20:24:01" hostname="LAPTOP-98HTIH2R" time="2.333">
+  <properties/>
+  <testcase name="RetrieveSharesHistorical_SharesRetrievedCorrectly" classname="UserPortfolioRetrieveSharesHistoricalTest" time="2.333"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
