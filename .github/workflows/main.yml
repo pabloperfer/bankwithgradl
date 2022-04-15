@@ -48,7 +48,7 @@ jobs:
     - uses: actions/download-artifact@main
       with:
         name: webpack artifacts
-        path: public
+        path: public/
     - name: Gradle unit tests
       run: ./gradlew run test
     
