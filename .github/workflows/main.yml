@@ -30,7 +30,7 @@ jobs:
         run: chmod +x ./gradlew
      # run build using gradle
       - name: Build with Gradle
-        run: ./gradlew build -x test
+        run: ./gradlew build -x test - checkstyle -findbugs 
       - uses: actions/upload-artifact@main
         with:
           name: webpack artifacts
@@ -48,7 +48,7 @@ jobs:
     - uses: actions/download-artifact@main
       with:
         name: webpack artifacts
-        path: public/
+        path: public
     - name: Gradle unit tests
       run: ./gradlew run test
     
