@@ -54,10 +54,10 @@ jobs:
     - name: make gradlew executable
       run: chmod +x ./gradlew
     - name: Gradle unit tests
-      run: ./gradlew run test
+      run: ./gradlew build -x checkstyle -x checkstyleMain -x checkstyleTest -x spotbugsMain -x spotbugsTest
 
   checkstyle:
-    needs: build
+    needs: test
     runs-on: ubuntu-latest
     steps:
     - name : setup jdk 17
@@ -74,10 +74,11 @@ jobs:
     - name: make gradlew executable
       run: chmod +x ./gradlew
     - name: Gradle checkstyle
-      run: ./gradlew run checkstyle
+      run: ./gradlew build -x test -x checkstyleMain -x checkstyleTest -x spotbugsMain -x spotbugsTest
+
       
   spotbugsMain:
-    needs: build
+    needs: checkstyle
     runs-on: ubuntu-latest
     steps:
     - name : setup jdk 17
@@ -94,5 +95,5 @@ jobs:
     - name: make gradlew executable
       run: chmod +x ./gradlew
     - name: Gradle spotbugs
-      run: ./gradlew run spotbugsMain
+      run: ./gradlew build -x test -x checkstyle -x checkstyleMain -x checkstyleTest  -x spotbugsTest
     
