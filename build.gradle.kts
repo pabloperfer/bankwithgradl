@@ -34,7 +34,7 @@ tasks.named<JavaExec>("run") {
 }
 
 tasks.getByName<Test>("test") {
-    source = fileTree("/home/runner/work/bankwithgradl/bankwithgradl/public")
+    source = fileTree("/src/main/java")
     doFirst {
         println(" executing the unit tests... ")
     }
@@ -53,13 +53,11 @@ checkstyle {
 
 tasks.register<Checkstyle>("checkstyle") {
     println("Checking coding style warnings and errors before unit tests.......")
-    source = fileTree("/home/runner/work/bankwithgradl/bankwithgradl/public")
     classpath = files()
     dependsOn ("spotbugs")
 }
 
 spotbugs {
-    source = fileTree("/home/runner/work/bankwithgradl/bankwithgradl/public")
     showProgress.set(true)
     tasks.spotbugsMain {
         dependsOn("test")
