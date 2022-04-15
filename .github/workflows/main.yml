@@ -36,7 +36,7 @@ jobs:
           name: webpack artifacts
           path: public/
         
-  test:
+  unit_tests:
     needs: spotbugsMain
     runs-on: ubuntu-latest
     steps:
