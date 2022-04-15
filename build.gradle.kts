@@ -34,7 +34,6 @@ tasks.named<JavaExec>("run") {
 }
 
 tasks.getByName<Test>("test") {
-    source = fileTree("/src/main/java")
     doFirst {
         println(" executing the unit tests... ")
     }
