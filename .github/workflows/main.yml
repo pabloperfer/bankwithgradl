@@ -30,7 +30,7 @@ jobs:
         run: chmod +x ./gradlew
      # run build using gradle
       - name: Build with Gradle
-        run: ./gradlew build -x test -x checkstyle -x spotbugsMain -x spotbugsTest
+        run: ./gradlew build -x test -x checkstyle -x checkstyleMain -x checkstyleTest-x spotbugsMain -x spotbugsTest
       - uses: actions/upload-artifact@main
         with:
           name: webpack artifacts
@@ -50,6 +50,9 @@ jobs:
       with:
         name: webpack artifacts
         path: public
+  # make gradlew executable 
+    - name: make gradlew executable
+      run: chmod +x ./gradlew
     - name: Gradle unit tests
       run: ./gradlew run test
 
@@ -67,6 +70,9 @@ jobs:
       with:
         name: webpack artifacts
         path: public
+    # make gradlew executable 
+    - name: make gradlew executable
+      run: chmod +x ./gradlew
     - name: Gradle checkstyle
       run: ./gradlew run checkstyle
       
@@ -84,6 +90,9 @@ jobs:
       with:
         name: webpack artifacts
         path: public
+    # make gradlew executable 
+    - name: make gradlew executable
+      run: chmod +x ./gradlew
     - name: Gradle spotbugs
       run: ./gradlew run spotbugsMain
     
