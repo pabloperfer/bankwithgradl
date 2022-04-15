@@ -30,4 +30,25 @@ jobs:
         run: chmod +x ./gradlew
      # run build using gradle
       - name: Build with Gradle
-        run: ./gradlew build
+        run: ./gradlew build -x test
+      - uses: actions/upload-artifact@main
+        with:
+          name: webpack artifacts
+          path: public/
+        
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - name : setup jdk 17
+        uses: actions/setup-java@v2
+        with:
+          java-version: '17'
+          distribution: 'adopt'
+    - uses: actions/checkout@v2
+    - uses: actions/download-artifact@main
+      with:
+        name: webpack artifacts
+        path: public
+    - name: Gradle unit tests
+        run: ./gradlew run test
+    
