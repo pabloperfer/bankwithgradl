@@ -37,7 +37,7 @@ jobs:
           path: public/
         
   test:
-    needs: build
+    needs: spotbugsMain
     runs-on: ubuntu-latest
     steps:
     - name : setup jdk 17
@@ -57,7 +57,7 @@ jobs:
       run: ./gradlew build -x checkstyle -x checkstyleMain -x checkstyleTest -x spotbugsMain -x spotbugsTest
 
   checkstyle:
-    needs: test
+    needs: build
     runs-on: ubuntu-latest
     steps:
     - name : setup jdk 17
