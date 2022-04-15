@@ -70,7 +70,7 @@ jobs:
     - name: Gradle checkstyle
       run: ./gradlew run checkstyle
       
-  spotbugs:
+  spotbugsMain:
     needs: build
     runs-on: ubuntu-latest
     steps:
