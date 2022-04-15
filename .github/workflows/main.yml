@@ -85,5 +85,5 @@ jobs:
         name: webpack artifacts
         path: public
     - name: Gradle spotbugs
-      run: ./gradlew run spotbugs
+      run: ./gradlew run spotbugsMain
     
