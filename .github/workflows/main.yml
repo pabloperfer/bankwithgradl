@@ -50,5 +50,5 @@ jobs:
         name: webpack artifacts
         path: public
     - name: Gradle unit tests
-        run: ./gradlew run test
+      run: ./gradlew run test
     
